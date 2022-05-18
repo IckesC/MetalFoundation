@@ -1,32 +1,42 @@
 @media (prefers-reduced-motion: no-preference) {
   :root{
       --logo-font: ;
-      --default-font: "Newsreader";
+      --default-font: Arial;
       --h1-font: ;
       --h2-font: ;
-      --nav-back-col: #4a4a4a;
-      --background-col: #78787d;
+      --nav-back-col: #2e2e2e;
+      --background-col: #3c3c3c;
       --third-col: #5c5c5c;
-      --text-col: #ffffff;
-  }
-
-  nav{
-    border-style: solid;
+      --text-col: white;
   }
 
   nav ul{
     list-style-type: none;
     margin: 0;
+    margin-left: 25%;
+    margin-right: 25%;
     padding: 0;
     background-color: var(--nav-back-col);
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+
+    border-style: solid;
+    border-top-style: none;
+    box-shadow: 0px 5px 10px black;
+    color: black;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  nav ul li:not(:last-child) {
+    border-right: 2px solid black;
+    color: white;
   }
 
   nav ul li{
-    float: right;
+    float: left;
   }
 
   nav ul li a{
@@ -35,11 +45,13 @@
     text-align: center;
     text-decoration: none;
     font-size: large;
-    padding: 14px 16px;
+    padding: 10px;
+    min-width: 12rem;
   }
 
   nav ul li a:hover{
-    background-color: #303030;
+    background-color: #c5c5c5;
+    color: black;
   }
 
   body{
@@ -53,6 +65,7 @@
 
   section{
     height: 100vh;
+    width: 100vw;
     scroll-snap-align: start;
     border-style: solid;
     border-color: black;
@@ -89,7 +102,7 @@
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
   }
 
 }
