@@ -1,0 +1,95 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root{
+      --logo-font: ;
+      --default-font: "Newsreader";
+      --h1-font: ;
+      --h2-font: ;
+      --nav-back-col: #4a4a4a;
+      --background-col: #78787d;
+      --third-col: #5c5c5c;
+      --text-col: #ffffff;
+  }
+
+  nav{
+    border-style: solid;
+  }
+
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--nav-back-col);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  nav ul li{
+    float: right;
+  }
+
+  nav ul li a{
+    display: block;
+    color: #ebebeb;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    padding: 14px 16px;
+  }
+
+  nav ul li a:hover{
+    background-color: #303030;
+  }
+
+  body{
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    font-family: var(--default-font);
+    background-color: var(--background-col);
+    color: var(--text-col)
+  }
+
+  section{
+    height: 100vh;
+    scroll-snap-align: start;
+    border-style: solid;
+    border-color: black;
+  }
+
+  h1{
+    font-size: xx-large;
+  }
+
+  h2{
+    font-size: x-large;
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  iframe{
+    border-style: solid;
+    padding: -1em;
+    background-color: var(--third-col);
+  }
+  .grid{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 50% 50%;
+  }
+
+  .logo{
+    text-align: center;
+
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+}
