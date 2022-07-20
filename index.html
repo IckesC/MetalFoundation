@@ -2,46 +2,81 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Metal Foundation Südharz</title>
     <link rel="stylesheet" href="css\master.css">
     <link rel="stylesheet" href="css\webkit.css">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
   <body>
-    <section class="center logo" id="title" tabindex="1">
-      <h1>METAL FOUNDATION SÜDHARZ</h1>
+    <!-- First slide -->
+    <section class="center title" id="title" tabindex="1">
+      <embed src="img/logo_text.svg" width="90%">
     </section>
-    <section class="grid" id="overview" tabindex="2">
-      <div class="grid" style="text-align: right">
 
-        <h2 class="center">Du suchst Metal im Südharz?<br>
-          Dann bist du hier genau richtig!</h2>
+    <div class="spacer layer1"></div>
 
-         <button type="button">Mehr hier!</button>
+    <!-- Second slide -->
+    <section class="grid layer1_col" id="overview" tabindex="2">
+      <div class="grid_v hr vc" style="text-align: right">
+        <h1 class="hr">Du suchst Metal im Südharz?<br>
+        Dann bist du hier genau richtig!</h1>
+
+        <p class="hr" style="font-size: 14pt">
+          Wir geben jungen und auch erfahreneren Künstlern die Chance auf einen Auftritt vor Publikum, mit professionellen Ton und Licht auf einer Bühne mit guter Organisation des Umfeldes.
+        </p>
       </div>
-      <div class="center"  style="justify-content: left">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XT7gzD26HDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
-    <section class="grid" id="events" tabindex="3">
-      <div class="center" style="text-align: right">
-        <h2>Das machen wir.</h2>
-      </div>
-    </section>
-    <section class="grid" id="bands" tabindex="4">
-      <div class="center" style="text-align: right">
-        <h2>Ihr / Du möchtet euch bewerben? <br>
-            Dann geht es hier weiter. </h2>
+      <div class="vc hl">
+        <iframe class="image"width="560" height="315" src="https://www.youtube.com/embed/XT7gzD26HDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
-    <section class="grid" id="team" tabindex="5">
-      <div class="center" style="text-align: right">
-        <h2>Schon uns kenngelernt? Nein? <br>
+
+    <div class="spacer layer2"></div>
+
+    <!-- Third slide -->
+    <section class="grid layer2_col" id="events" tabindex="3">
+      <div class="hr vc">
+        <img class="image" src="img/bookwood.jpg">
+      </div>
+      <div class="hl vc grid_v" style="text-align: left">
+        <h1>Unsere Events? <br> Schau doch mal vorbei!</h1>
+        <button class="button">Auf gehts!</button>
+      </div>
+    </section>
+
+    <div class="spacer layer3"></div>
+
+    <!-- Fourth slide -->
+    <section class="grid layer3_col" id="bands" tabindex="4">
+      <div class="vc hr grid_v " style="text-align: right">
+        <h1>Ihr / Du möchtet euch bewerben? <br>
+            Dann geht es hier weiter. </h1>
+        <button class="button">Ich meinte hier ...</button>
+      </div>
+      <div class="hl vc">
+        <img class="image" src="img/bewerben.jpg">
+      </div>
+    </section>
+
+    <div class="spacer layer4"></div>
+
+    <!-- Fifth slide -->
+    <section class="grid layer4_col" id="team" tabindex="5">
+      <div class="hr vc">
+        <img class="image" src="img/gruppenfoto.jpg">
+      </div>
+      <div class="hl vc grid_v">
+        <h1>Schon uns kenngelernt? Nein? <br>
             Na dann los!
-        </h2>
+        </h1>
+        <button class="button">Erfahre Mehr!</button>
       </div>
     </section>
 
+    <!-- Navifation slide -->
+    <!--
     <nav>
       <ul>
         <li><a href="#overview">Über uns</a></li>
@@ -50,5 +85,6 @@
         <li><a href="#team">Das Team</a></li>
       </ul>
     </nav>
+    -->
   </body>
 </html>
